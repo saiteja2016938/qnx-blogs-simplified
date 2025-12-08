@@ -1,0 +1,36 @@
+"nano image.build"
+
+
+
+
+
+
+this command opens an editor ,then add this script to editor 
+
+
+
+
+
+
+"[virtual=x86_64,multiboot] boot = {
+    startup-x86 -D 8250
+    procnto-smp-instr
+}
+
+[+script] init = {
+    display_msg "Hello, stranger!"
+}
+"
+
+
+virtual=x86_64,multiboot → We are building a 64-bit QNX image using the Multiboot standard.
+
+startup-x86 -D 8250 → QNX startup code; 8250 enables serial output.
+
+procnto-smp-instr → The QNX kernel.
+
+display_msg "Hello, stranger!" → Will print this on QEMU's serial console.
+
+
+Save + exit:
+Ctrl+O → Enter → Ctrl+X
