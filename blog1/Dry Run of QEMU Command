@@ -1,0 +1,21 @@
+64-bit Intel → use qemu-system-x86_64
+
+"-cpu max" → emulate a CPU similar to your real one
+
+"-smp 1" → only 1 CPU core
+
+"-display none" → no graphical window, only console
+
+"-serial stdio" → connect serial to your terminal
+
+"-kernel image" → boot the “image” file we will build in next post
+
+
+Dry Run of QEMU Command
+
+"qemu-system-x86_64 -cpu max -smp 1 -display none -kernel image -serial stdio"
+
+Expected output:
+
+Could not open 'image'
+
