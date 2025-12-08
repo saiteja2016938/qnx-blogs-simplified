@@ -1,0 +1,9 @@
+In Blog 1, we prepared virtual hardware (QEMU machine).
+
+now,In Blog 2, you will prepare the operating system image that QEMU will boot
+
+This OS image contains:
+
+startup code "startup-x86"
+kernel "procnto-smp-instr"
+a small script that prints a message  "image.ifs  which stands for Image File System.
