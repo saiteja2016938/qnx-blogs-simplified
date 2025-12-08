@@ -1,0 +1,7 @@
+Host = your laptop
+
+Target = the computer emulated by QEMU
+
+QEMU = software that behaves like a real computer
+
+We will run QNX on this virtual computer
