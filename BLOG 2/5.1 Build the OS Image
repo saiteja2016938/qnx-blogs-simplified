@@ -1,0 +1,10 @@
+"mkifs image.build image.ifs"
+
+build image.ifs file using the above command
+
+If successful, run:
+"ls"
+
+You should see:
+
+image.build  image.ifs
