@@ -1,0 +1,1 @@
+qemu-system-x86_64 -cpu max -smp 1 -display none -kernel image.ifs -serial stdio
