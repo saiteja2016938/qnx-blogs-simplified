@@ -1,0 +1,3 @@
+cd ~/qnx800
+source qnxsdp-env.sh
+cd ~/qnx-from-board-up/blog2
