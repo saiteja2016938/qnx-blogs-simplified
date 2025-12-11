@@ -1,0 +1,10 @@
+You should have a folder structure like:
+
+~/qnx-from-board-up
+    blog1/
+    blog2/
+    
+Now create and enter blog3:
+cd ~/qnx-from-board-up
+mkdir -p blog3
+cd blog3
