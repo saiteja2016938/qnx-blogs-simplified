@@ -1,0 +1,6 @@
+"mkifs image.build image.ifs"
+
+If it's successful, you’ll see:
+
+image.build  image.ifs
+                               
