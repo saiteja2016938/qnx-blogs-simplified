@@ -1,0 +1,30 @@
+Now you need to add your hello program into the QNX boot image.
+
+"cd ~/qnx-from-board-up/blog3"
+"nano image.build"
+
+Paste this content (based on the blog):
+
+[virtual=x86_64,multiboot] boot = {
+    startup-x86 -D 8250
+    procnto-smp-instr
+}
+
+[+fsys] root = {
+    /hello
+}
+
+[+script] init = {
+    display_msg "Hello World from QNX"
+    exec /hello
+}
+
+
+What changed we did?
+
+Added a filesystem section [+fsys] root = {...} to include /hello in the image.
+In the init script:
+                  Show a message via display_msg
+                  Run your user-space program with exec /hello
+
+ Save and exit.
