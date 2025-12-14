@@ -10,14 +10,13 @@ Paste this content (based on the blog):
     procnto-smp-instr
 }
 
-[+fsys] root = {
-    /hello
-}
+./hello
 
 [+script] init = {
     display_msg "Hello World from QNX"
-    exec /hello
+    exec /proc/boot/hello
 }
+
 
 
 What changed we did?
